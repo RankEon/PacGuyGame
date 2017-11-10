@@ -1,0 +1,21 @@
+﻿<Page x:Class="PacGuyGame.GameBoard"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PacGuyGame"
+      mc:Ignorable="d" 
+      d:DesignHeight="890" d:DesignWidth="1265"
+      Title="GameBoard" Background="#FFAC9E9E" ShowsNavigationUI="False">
+
+    <Grid>
+        <Canvas x:Name="gameBoardCanvas" HorizontalAlignment="Left" MinHeight="825" MinWidth="1250" VerticalAlignment="Top" Width="100" Background="Black" Margin="0,50,0,0">
+            <Label x:Name="lblMessageOverlay" Content="Foe Caught You!" Canvas.Left="345" Canvas.Top="-53" Height="53" Width="473" BorderBrush="Black" Foreground="Black" FontSize="32" FontWeight="Bold"/>
+            <Label x:Name="lblHeroLives" Content="3 UP" Canvas.Left="159" Canvas.Top="-53" Height="53" Width="149" BorderBrush="Black" Foreground="Black" FontSize="32" FontWeight="Bold"/>
+        </Canvas>
+        <Canvas x:Name="gameAnimationCanvas" HorizontalAlignment="Left" MinHeight="825" MinWidth="1250" VerticalAlignment="Top" Width="100" Margin="0,50,0,0"/>
+        <Label x:Name="labelScore" Content="000000" Margin="921,0,0,0" VerticalAlignment="Top" Width="329" Height="45" Background="#FFC5B5B5" BorderBrush="#FFD89797" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" FontStretch="ExtraExpanded"/>
+        <Button x:Name="btnTestAnimation" Content="Run test" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Height="35" RenderTransformOrigin="0.492,-0.2" FontSize="16" FontWeight="Bold" Click="btnTestAnimation_Click"/>
+
+    </Grid>
+</Page>
